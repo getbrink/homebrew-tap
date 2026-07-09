@@ -42,17 +42,17 @@ cask "brink" do
     end
   end
 
-  version "0.4.3"
+  version "0.4.5"
 
   on_macos do
     on_intel do
-      sha256 "8597ddab34b92f58946e10853baa8e5ea787dd9f4d6b11dfee0761e7bfda7bca"
+      sha256 "06d19150a63691268b8de11fe048249f27d2f2c3c46d74e2e205abd2fff1e127"
       url "https://github.com/getbrink/brink/releases/download/v#{version}/brink_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/getbrink/brink/",
         using: GitHubPrivateRepositoryReleaseDownloadStrategy
     end
     on_arm do
-      sha256 "09ab0e5267839c6501d84e7d551955abaa7502ec3059e2cb2916044feecc809a"
+      sha256 "58610cc2aca11b862eb4dadea8dca60842f9b52fba129009deeb500a63df5649"
       url "https://github.com/getbrink/brink/releases/download/v#{version}/brink_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/getbrink/brink/",
         using: GitHubPrivateRepositoryReleaseDownloadStrategy
@@ -61,13 +61,13 @@ cask "brink" do
 
   on_linux do
     on_intel do
-      sha256 "ea89099f339bf6ea574ae727003e4e4e4c9e0f9d0346ec035caaf85b9f3fb8f7"
+      sha256 "38fac48151ca2558007b5e0275b3faa4089d5263e94cf1f33bbd86b93e528e34"
       url "https://github.com/getbrink/brink/releases/download/v#{version}/brink_#{version}_linux_amd64.tar.gz",
         verified: "github.com/getbrink/brink/",
         using: GitHubPrivateRepositoryReleaseDownloadStrategy
     end
     on_arm do
-      sha256 "19b600b7cb5fe5e0042895bbddb8359f39b716f7aacf0779419bbcdd81193e6e"
+      sha256 "7619e9bca54c9805de7ac2da73dc1f1829373188fa832b808369f28861eb98f0"
       url "https://github.com/getbrink/brink/releases/download/v#{version}/brink_#{version}_linux_arm64.tar.gz",
         verified: "github.com/getbrink/brink/",
         using: GitHubPrivateRepositoryReleaseDownloadStrategy
