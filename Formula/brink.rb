@@ -6,13 +6,13 @@ require_relative "../lib/custom_download_strategy"
 class Brink < Formula
   desc "Reliability control loop operator CLI for AI agents."
   homepage "https://docs.getbrink.dev"
-  version "0.4.6"
+  version "0.5.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/getbrink/brink-releases/releases/download/v0.4.6/brink_0.4.6_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "1321ef3f832dc3bd86fa24a5f00e07ee75df57081986a1623761d785e08b8e8c"
+      url "https://github.com/getbrink/brink-releases/releases/download/v0.5.0/brink_0.5.0_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "ccd980f0dfbb38014e85f7d72dda235967904c7e294f854d5aaadd0ccef5d9ab"
 
       define_method(:install) do
         bin.install "brink"
@@ -23,8 +23,8 @@ class Brink < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/getbrink/brink-releases/releases/download/v0.4.6/brink_0.4.6_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "41e1862c5408332ce2e1204ee1a37f98f8a18bc9d571c3295b96e3338c688145"
+      url "https://github.com/getbrink/brink-releases/releases/download/v0.5.0/brink_0.5.0_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "6bbcb38f3d5eb8fabbec7f547c29ae8770b2d0eeb004765792564fe46ce4569a"
 
       define_method(:install) do
         bin.install "brink"
@@ -38,8 +38,8 @@ class Brink < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/getbrink/brink-releases/releases/download/v0.4.6/brink_0.4.6_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "e1ba57c393d0ac6ec9bc4e127b30d1564bdc425b8293358c893292be64225d8a"
+      url "https://github.com/getbrink/brink-releases/releases/download/v0.5.0/brink_0.5.0_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "ff16ac1fc547f4238d7dba2733dd62db8fbebfb385e308221a217e3a1d858554"
       define_method(:install) do
         bin.install "brink"
         man1.install "man/brink.1"
@@ -49,8 +49,8 @@ class Brink < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/getbrink/brink-releases/releases/download/v0.4.6/brink_0.4.6_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "ab8baf9430526bec7ab6dd474e265b41ebc052b67d5894f6843eb2fd971a05de"
+      url "https://github.com/getbrink/brink-releases/releases/download/v0.5.0/brink_0.5.0_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "5ea9522b44141b4e6f967415149ee115aeaf4032ae49e33722f0de955bffc76a"
       define_method(:install) do
         bin.install "brink"
         man1.install "man/brink.1"
