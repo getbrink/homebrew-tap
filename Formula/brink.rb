@@ -11,7 +11,7 @@ class Brink < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/getbrink/brink-releases/releases/download/v0.5.3/brink_0.5.3_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      url "https://dl.getbrink.dev/brew/v0.5.3/brink_0.5.3_darwin_amd64.tar.gz", using: BrinkBrokerDownloadStrategy
       sha256 "baf5efe414631e072d41acca6f1f81c966e0112914da729eccb46dd3ad70000b"
 
       define_method(:install) do
@@ -23,7 +23,7 @@ class Brink < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/getbrink/brink-releases/releases/download/v0.5.3/brink_0.5.3_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      url "https://dl.getbrink.dev/brew/v0.5.3/brink_0.5.3_darwin_arm64.tar.gz", using: BrinkBrokerDownloadStrategy
       sha256 "6317d3b0e58acf15a8c94ecf0e7f5bd1ef257c1087fc371f8aef313559936d31"
 
       define_method(:install) do
@@ -38,7 +38,7 @@ class Brink < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/getbrink/brink-releases/releases/download/v0.5.3/brink_0.5.3_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      url "https://dl.getbrink.dev/brew/v0.5.3/brink_0.5.3_linux_amd64.tar.gz", using: BrinkBrokerDownloadStrategy
       sha256 "790649e609ef3bc9146cea9d49e5e4f24feff482bbecfcaa6523a3b50d185317"
       define_method(:install) do
         bin.install "brink"
@@ -49,7 +49,7 @@ class Brink < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/getbrink/brink-releases/releases/download/v0.5.3/brink_0.5.3_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      url "https://dl.getbrink.dev/brew/v0.5.3/brink_0.5.3_linux_arm64.tar.gz", using: BrinkBrokerDownloadStrategy
       sha256 "76a56e55b90011b53bf3abe0fe0ad65a297fbd22b99e4e7e52a77671c0322cbd"
       define_method(:install) do
         bin.install "brink"
