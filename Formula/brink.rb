@@ -6,13 +6,13 @@ require_relative "../lib/custom_download_strategy"
 class Brink < Formula
   desc "Reliability control loop operator CLI for AI agents."
   homepage "https://docs.getbrink.dev"
-  version "0.5.6"
+  version "0.5.8"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://dl.getbrink.dev/brew/v0.5.6/brink_0.5.6_darwin_amd64.tar.gz", using: BrinkBrokerDownloadStrategy
-      sha256 "093a9f1aedcdbd7c98611d475c1333b278b12db15b99312b3c4c11368209c926"
+      url "https://dl.getbrink.dev/brew/v0.5.8/brink_0.5.8_darwin_amd64.tar.gz", using: BrinkBrokerDownloadStrategy
+      sha256 "044ce665abef0484afc3edfdd6de5131faa501802f4cd232dd518cf390ad551e"
 
       define_method(:install) do
         bin.install "brink"
@@ -23,8 +23,8 @@ class Brink < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://dl.getbrink.dev/brew/v0.5.6/brink_0.5.6_darwin_arm64.tar.gz", using: BrinkBrokerDownloadStrategy
-      sha256 "ce2e913257603cf4d2e23dd4de801d1280fd57e97e350a5879edbcd739f92b89"
+      url "https://dl.getbrink.dev/brew/v0.5.8/brink_0.5.8_darwin_arm64.tar.gz", using: BrinkBrokerDownloadStrategy
+      sha256 "d157476186512413b1f24c392c0da1d7a2ece21a5bd7d1e11df9216780bdb910"
 
       define_method(:install) do
         bin.install "brink"
@@ -38,8 +38,8 @@ class Brink < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://dl.getbrink.dev/brew/v0.5.6/brink_0.5.6_linux_amd64.tar.gz", using: BrinkBrokerDownloadStrategy
-      sha256 "4fa922974694be06e6bd14a8cd73f5c752c2d57f909fc126d71f305b416db76e"
+      url "https://dl.getbrink.dev/brew/v0.5.8/brink_0.5.8_linux_amd64.tar.gz", using: BrinkBrokerDownloadStrategy
+      sha256 "88f89e5d7121861520fb12e73eab0f2d5fd57e501e9121dc86ef413a1f3069e4"
       define_method(:install) do
         bin.install "brink"
         man1.install "man/brink.1"
@@ -49,8 +49,8 @@ class Brink < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://dl.getbrink.dev/brew/v0.5.6/brink_0.5.6_linux_arm64.tar.gz", using: BrinkBrokerDownloadStrategy
-      sha256 "a8164aba65a9e9f0e9718bc719c471d7aefb31dc4c295dac0061e98cb1195d1c"
+      url "https://dl.getbrink.dev/brew/v0.5.8/brink_0.5.8_linux_arm64.tar.gz", using: BrinkBrokerDownloadStrategy
+      sha256 "486b1f744593018d96c68cdfaa858d235d1ca6f10e80fdb490da20f3a773948d"
       define_method(:install) do
         bin.install "brink"
         man1.install "man/brink.1"
