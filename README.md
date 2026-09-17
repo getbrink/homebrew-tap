@@ -8,7 +8,7 @@ brew trust getbrink/tap
 brew install getbrink/tap/brink
 ```
 
-Brink's release artifacts live in the private `getbrink/brink-releases`.
+Brink's release artifacts live in `getbrink/brink-releases`.
 `lib/custom_download_strategy.rb` resolves them through the GitHub release-asset
 API using `HOMEBREW_GITHUB_API_TOKEN`. Without a token the install fails with an
 explanatory error rather than a bare 404.
