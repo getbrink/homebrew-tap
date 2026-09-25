@@ -7,7 +7,7 @@ class Brink < Formula
   desc "Reliability control loop operator CLI for AI agents."
   homepage "https://docs.getbrink.dev"
   version "0.6.1"
-  license "FSL-1.1-ALv2"
+  license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
