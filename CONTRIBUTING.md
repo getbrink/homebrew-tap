@@ -32,4 +32,4 @@ pull request. See `SECURITY.md`.
 ## Licence
 
 By contributing you agree that your contribution is licensed under the Apache License 2.0 in
-`LICENSE`.
+`LICENSE`. Every commit carries a Developer Certificate of Origin sign-off (`git commit -s`).
